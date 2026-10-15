@@ -4,7 +4,7 @@ nav li:focus, nav a:hover {
 
 
 header a[href="#main"] {
-    position: absolute;
+    position: relative;
     top: -65px;
 }
 
@@ -54,4 +54,30 @@ footer {
     background-color: #c6c3df;
     text-align: center;
     font-size: small;
+}
+
+section > h2{
+    text-align: center;
+    text-decoration: underline;
+    padding-top: 30px;
+
+}
+
+p {
+    padding: 10px 5px;
+    
+}
+
+iframe, img {
+    height: auto;
+    width: 100%;
+}
+
+section:nth-of-type(odd), aside{
+    border-bottom: 2px dotted cornflowerblue;
+    border-top: 2px dotted cornflowerblue;
+}
+section:nth-of-type(even), aside{
+    border-top: 2px dotted tomato;
+    border-bottom: 2px dotted tomato;
 }
