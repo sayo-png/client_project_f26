@@ -74,30 +74,102 @@ iframe, img{
     margin: 0 auto;
 }
 
+iframe {
+    height: 300px;
+    border: 0;
+    max-width: 100%;
+}
+
 
 h3, li {
     padding-top: 20px;
 }
 
-article {
+
+#indexID article:nth-of-type(-n + 4) {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     align-items: center;
-    text-align: left;
     border-top: 1px dashed #c6c3df;
     border-bottom: 1px dashed #c6c3df;
+    text-align: center;
 }
 
-article h3 {
+#indexID article h3 {
     grid-column: 1 / -1;
     text-align: center;
 }
 
-article ul, article ol, article li {
+#indexID article li {
     grid-column: 2 / 3;
     text-align: left;
-    max-width: 90%;   
+    max-width: 90%;  
+}
+
+#indexID section:nth-of-type(4) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column: 1 / -1;
+}
+
+#indexID section:nth-of-type(4) h2, #indexID section:nth-of-type(4) p:first-of-type{
+    grid-column: 1 / -1;
+    text-align: center;
+}
+
+#partnerID #main section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border-top: 1px dashed #c6c3df;
+    border-bottom: 1px dashed #c6c3df;
+}
+
+#partnerID #main li {
+    padding-left: 20px;
+}
+
+#prepID article {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border-top: 1px dashed #c6c3df;
+    border-bottom: 1px dashed #c6c3df;
 }
 
 
+#prepID article h3 {
+    grid-column: 1 / -1;
+    text-align: center;
+}
 
+#prepID article ul, #prepID article ol {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 15px 25px;
+    margin-left: 20px;
+}
+
+#prepID article li {
+    grid-column: auto;
+}
+
+
+#startID section h2 {
+    grid-column: 1 / -1;
+    text-align: center;
+}
+
+#startID section:nth-of-type(2) ul, #prepID section:nth-of-type(2) ol {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    border-top: 1px dashed #c6c3df;
+    border-bottom: 1px dashed #c6c3df;
+    gap: 15px 25px; 
+    margin-left: 20px;
+
+}
+
+#startID section li {
+    grid-column: auto;
+}
