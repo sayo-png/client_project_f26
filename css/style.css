@@ -3,10 +3,9 @@
     border: 3px solid #7723EE;
 }
 
-nav li:focus, nav a:hover {
-    border: 5px solid #7e035f
+nav a:focus, nav a:hover {
+    border: 3px solid #7e035f
 }
-
 
 header a[href="#main"] {
     position: relative;
@@ -14,8 +13,7 @@ header a[href="#main"] {
 }
 
 header a[href="#main"]:focus {
-    background-color: white;
-    border:#22Aa84;
+    border:5px solid #22Aa84;
     top: 0;;
 }
 
