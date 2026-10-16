@@ -1,10 +1,10 @@
 
 *:focus {
-    border: 3px solid #7723EE;
+    border: 3px solid #FFCB05;
 }
 
 nav a:focus, nav a:hover {
-    border: 3px solid #7e035f
+    border: 3px solid #00274C
 }
 
 header a[href="#main"] {
@@ -13,7 +13,7 @@ header a[href="#main"] {
 }
 
 header a[href="#main"]:focus {
-    border:5px solid #22Aa84;
+    border:5px solid #FFCB05;
     top: 0;;
 }
 
@@ -22,7 +22,8 @@ nav {
     display: grid;
     gap: 13px;
     text-align: center;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'IBM Plex Super Family', Montserrat, 'Nunito Sans', Merriweather;
+    font-family: Nu;
 }
 
 nav ul {
