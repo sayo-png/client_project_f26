@@ -57,27 +57,47 @@ footer {
 }
 
 section > h2{
-    text-align: center;
     text-decoration: underline;
     padding-top: 30px;
 
 }
 
 p {
-    padding: 10px 5px;
+    padding: 10px 0px;
     
 }
 
-iframe, img {
+iframe, img{
+    display: block;
+    max-width: 100%;
     height: auto;
-    width: 100%;
+    margin: 0 auto;
 }
 
-section:nth-of-type(odd), aside{
-    border-bottom: 2px dotted cornflowerblue;
-    border-top: 2px dotted cornflowerblue;
+
+h3, li {
+    padding-top: 20px;
 }
-section:nth-of-type(even), aside{
-    border-top: 2px dotted tomato;
-    border-bottom: 2px dotted tomato;
+
+article {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    text-align: left;
+    border-top: 1px dashed #c6c3df;
+    border-bottom: 1px dashed #c6c3df;
 }
+
+article h3 {
+    grid-column: 1 / -1;
+    text-align: center;
+}
+
+article ul, article ol, article li {
+    grid-column: 2 / 3;
+    text-align: left;
+    max-width: 90%;   
+}
+
+
+
