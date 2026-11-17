@@ -177,3 +177,41 @@ h3, li {
 #startID section li {
     grid-column: auto;
 }
+
+@media screen and (min-width: 1000px) {
+    /**
+    This view is for the desktop make sure to mention that in the write up
+    11/18 - Improvement from mobile design 
+        rename the titles of the pages so they match what the page reflects
+        use a font from umich stuff
+        add like a maize background
+    
+    11/18 - Requirements
+        * need a 404 page *
+
+    11/19 - Home:
+        Have the navigation maybe be bigger
+        have the underlines be bigger and change the color to blue
+            center it on the page if I am able to but i may prefer to keep it left aligned
+        remove the coloumns
+        add gaps between the different sections
+        and change the background color of the different sections
+    
+    11/20 - Prepare for you experience
+        make headers bigger, blue, and maybe center-aligned
+        remove the columns unless I am able to make it separate background colors (like maize the blue)
+
+    11/21 - Starting your experience
+        maybe have the picture to the left and the first three sentences to the right of it
+        make the headers bigger, blue, and maybe center-aligned
+    
+    11/19 - Campus partner resources
+        make the headers bigger, blue and maybe center-aligned
+        I like the format of it so far
+    
+    11/18 - Footer
+        needs to dynamically update with the year
+        make the footer text a bit bigger
+
+     */
+}
