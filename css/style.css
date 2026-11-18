@@ -1,10 +1,19 @@
+body {
+    background-color: #00274C;
+    color: white;
+}
 
 *:focus {
     border: 3px solid #FFCB05;
 }
 
 nav a:focus, nav a:hover {
-    border: 3px solid #00274C
+    border: 3px solid #00274C;
+}
+
+header {
+    background-color: #00274C;
+    color: #FFCB05;
 }
 
 header a[href="#main"] {
@@ -17,13 +26,16 @@ header a[href="#main"]:focus {
     top: 0;;
 }
 
+nav a:visited {
+    color: white;
+}
 
 nav {
     display: grid;
     gap: 13px;
     text-align: center;
     font-family: 'IBM Plex Super Family', Montserrat, 'Nunito Sans', Merriweather;
-    font-family: Nu;
+    color: #FFCB05;
 }
 
 nav ul {
@@ -34,7 +46,7 @@ nav ul {
 }
 
 nav li {
-    border: 2px dashed #383f44;
+    border: 2px dashed #FFCB05;
     padding: 10px 3px;
     text-align: center;
     align-content: center;
@@ -43,8 +55,8 @@ nav li {
 nav a.active {
     text-decoration: none;
     font-weight: bolder;
-    border-bottom: 2px solid #7723EE;
-    color: #7723EE;
+    border-bottom: 2px solid #FFCB05;
+    color: #FFCB05;
 }
 
 h1 {
@@ -67,8 +79,7 @@ section > h2{
 }
 
 p {
-    padding: 10px 0px;
-    
+    padding: 10px 0px; 
 }
 
 iframe, img{
@@ -177,16 +188,25 @@ h3, li {
 #startID section li {
     grid-column: auto;
 }
+#error {
+    background-color: #00274C;
+    color: #FFCB05;
+}
+#error h2 {
+    display: grid;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
 
 @media screen and (min-width: 1000px) {
     /**
     This view is for the desktop make sure to mention that in the write up
-    11/18 - Improvement from mobile design 
+    ✅ 11/18 - Improvement from mobile design 
         rename the titles of the pages so they match what the page reflects
         use a font from umich stuff
-        add like a maize background
+        add like a blue background
     
-    11/18 - Requirements
+    ✅ 11/18 - Requirements
         * need a 404 page *
 
     11/19 - Home:
@@ -209,9 +229,8 @@ h3, li {
         make the headers bigger, blue and maybe center-aligned
         I like the format of it so far
     
-    11/18 - Footer
+    ✅ 11/18 - Footer
         needs to dynamically update with the year
-        make the footer text a bit bigger
 
      */
 }
